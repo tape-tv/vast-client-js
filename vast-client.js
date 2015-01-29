@@ -943,7 +943,7 @@ VASTParser = (function() {
   };
 
   VASTParser.parseNodeText = function(node) {
-    return node && (node.textContent || node.text);
+    return node && (node.textContent || node.text || '').trim();
   };
 
   return VASTParser;
